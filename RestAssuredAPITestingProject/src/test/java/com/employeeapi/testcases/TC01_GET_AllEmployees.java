@@ -29,6 +29,7 @@ public class TC01_GET_AllEmployees extends TestBase{
 	@Test
 	public void testResponseBody()
 	{
+		logger.info("****Test Response Body***************");
 		String responseBody = response.getBody().asString();
 		//System.out.println("Response Body is : " + responseBody);
 		logger.info("Response Body is : " + responseBody);
