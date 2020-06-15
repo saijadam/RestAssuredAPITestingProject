@@ -63,6 +63,7 @@ public class TC01_GET_AllEmployees extends TestBase{
 	@Test
 	public void testStatusLine()
 	{
+		logger.info("****Test Status Line***************");
 		String statusLine = response.statusLine();
 		logger.info("Status Line is : " + statusLine);
 	
