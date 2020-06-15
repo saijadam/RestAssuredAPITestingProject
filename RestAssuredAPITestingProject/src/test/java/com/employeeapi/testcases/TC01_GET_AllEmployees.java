@@ -50,6 +50,7 @@ public class TC01_GET_AllEmployees extends TestBase{
 	@Test
 	public void testResponseTime()
 	{
+		logger.info("****Test Response Time***************");
 		long responseTime = response.getTime();
 		logger.info("Response Time is : " + responseTime);
 		
