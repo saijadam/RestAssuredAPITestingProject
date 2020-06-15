@@ -40,6 +40,7 @@ public class TC01_GET_AllEmployees extends TestBase{
 	@Test
 	public void testStatusCode()
 	{
+		logger.info("****Test Status Code***************");
 		int statusCode = response.getStatusCode();
 		logger.info("Status Code is : " + statusCode);
 		
