@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 4 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-EmployeeRestAPISuite" class="navigator-link">
+              <span class="suite-name border-failed">EmployeeRestAPISuite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-EmployeeRestAPISuite" class="navigator-link ">
+                    <span>D:\Learning\RestAssuredAPITestingProject\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-EmployeeRestAPISuite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-EmployeeRestAPISuite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-EmployeeRestAPISuite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-EmployeeRestAPISuite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-EmployeeRestAPISuite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-EmployeeRestAPISuite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">10 methods, 4 failed,   6 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-EmployeeRestAPISuite" class="hide-methods failed suite-EmployeeRestAPISuite"> (hide)</a> <!-- hide-methods failed suite-EmployeeRestAPISuite -->
+                      <a href="#" panel-name="suite-EmployeeRestAPISuite" class="show-methods failed suite-EmployeeRestAPISuite"> (show)</a> <!-- show-methods failed suite-EmployeeRestAPISuite -->
+                    </span>
+                    <div class="method-list-content failed suite-EmployeeRestAPISuite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-EmployeeRestAPISuite" title="com.employeeapi.testcases.TC01_GET_AllEmployees" class="method navigator-link" hash-for-method="testContentLength">testContentLength</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-EmployeeRestAPISuite" title="com.employeeapi.testcases.TC01_GET_AllEmployees" class="method navigator-link" hash-for-method="testContentType">testContentType</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-EmployeeRestAPISuite" title="com.employeeapi.testcases.TC01_GET_AllEmployees" class="method navigator-link" hash-for-method="testResponseTime">testResponseTime</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-EmployeeRestAPISuite" title="com.employeeapi.testcases.TC01_GET_AllEmployees" class="method navigator-link" hash-for-method="testServerType">testServerType</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-EmployeeRestAPISuite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-EmployeeRestAPISuite" class="hide-methods passed suite-EmployeeRestAPISuite"> (hide)</a> <!-- hide-methods passed suite-EmployeeRestAPISuite -->
+                      <a href="#" panel-name="suite-EmployeeRestAPISuite" class="show-methods passed suite-EmployeeRestAPISuite"> (show)</a> <!-- show-methods passed suite-EmployeeRestAPISuite -->
+                    </span>
+                    <div class="method-list-content passed suite-EmployeeRestAPISuite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-EmployeeRestAPISuite" title="com.employeeapi.testcases.TC01_GET_AllEmployees" class="method navigator-link" hash-for-method="testContentEncoding">testContentEncoding</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-EmployeeRestAPISuite" title="com.employeeapi.testcases.TC01_GET_AllEmployees" class="method navigator-link" hash-for-method="testCoockies">testCoockies</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-EmployeeRestAPISuite" title="com.employeeapi.testcases.TC01_GET_AllEmployees" class="method navigator-link" hash-for-method="testResponseBody">testResponseBody</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-EmployeeRestAPISuite" title="com.employeeapi.testcases.TC02_GET_SingleEmployeeRecord" class="method navigator-link" hash-for-method="testResponseBody">testResponseBody</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-EmployeeRestAPISuite" title="com.employeeapi.testcases.TC01_GET_AllEmployees" class="method navigator-link" hash-for-method="testStatusCode">testStatusCode</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-EmployeeRestAPISuite" title="com.employeeapi.testcases.TC01_GET_AllEmployees" class="method navigator-link" hash-for-method="testStatusLine">testStatusLine</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-EmployeeRestAPISuite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-EmployeeRestAPISuite" class="panel EmployeeRestAPISuite">
+          <div class="suite-EmployeeRestAPISuite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.employeeapi.testcases.TC01_GET_AllEmployees</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testContentLength">
+                  </a> <!-- testContentLength -->
+                  <span class="method-name">testContentLength</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [Content Length is not as expected - &lt; 100] but found [false]
+	at com.employeeapi.testcases.TC01_GET_AllEmployees.testContentLength(TC01_GET_AllEmployees.java:103)
+... Removed 34 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testContentType">
+                  </a> <!-- testContentType -->
+                  <span class="method-name">testContentType</span>
+                  <div class="stack-trace">java.lang.AssertionError: Content Type is not as expected - text/html; charset=UTF-8 expected [text/html; charset=UTF-8] but found [application/json;charset=utf-8]
+	at com.employeeapi.testcases.TC01_GET_AllEmployees.testContentType(TC01_GET_AllEmployees.java:74)
+... Removed 34 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testResponseTime">
+                  </a> <!-- testResponseTime -->
+                  <span class="method-name">testResponseTime</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [Response Time is not as expected &gt;2000] but found [true]
+	at com.employeeapi.testcases.TC01_GET_AllEmployees.testResponseTime(TC01_GET_AllEmployees.java:57)
+... Removed 34 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testServerType">
+                  </a> <!-- testServerType -->
+                  <span class="method-name">testServerType</span>
+                  <div class="stack-trace">java.lang.AssertionError: Server Type is not as expected - nginx/1.14.1 expected [nginx/1.14.1] but found [nginx/1.16.0]
+	at com.employeeapi.testcases.TC01_GET_AllEmployees.testServerType(TC01_GET_AllEmployees.java:82)
+... Removed 34 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-EmployeeRestAPISuite-class-failed -->
+          <div class="suite-EmployeeRestAPISuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.employeeapi.testcases.TC02_GET_SingleEmployeeRecord</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testResponseBody">
+                  </a> <!-- testResponseBody -->
+                  <span class="method-name">testResponseBody</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-EmployeeRestAPISuite-class-passed -->
+          <div class="suite-EmployeeRestAPISuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.employeeapi.testcases.TC01_GET_AllEmployees</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testContentEncoding">
+                  </a> <!-- testContentEncoding -->
+                  <span class="method-name">testContentEncoding</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCoockies">
+                  </a> <!-- testCoockies -->
+                  <span class="method-name">testCoockies</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testResponseBody">
+                  </a> <!-- testResponseBody -->
+                  <span class="method-name">testResponseBody</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testStatusCode">
+                  </a> <!-- testStatusCode -->
+                  <span class="method-name">testStatusCode</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testStatusLine">
+                  </a> <!-- testStatusLine -->
+                  <span class="method-name">testStatusLine</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-EmployeeRestAPISuite-class-passed -->
+        </div> <!-- panel EmployeeRestAPISuite -->
+        <div panel-name="test-xml-EmployeeRestAPISuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">D:\Learning\RestAssuredAPITestingProject\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;EmployeeRestAPISuite&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Regression1&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.employeeapi.testcases.TC01_GET_AllEmployees&quot;/&gt;
+      &lt;class name=&quot;com.employeeapi.testcases.TC02_GET_SingleEmployeeRecord&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Regression1 --&gt;
+&lt;/suite&gt; &lt;!-- EmployeeRestAPISuite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-EmployeeRestAPISuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for EmployeeRestAPISuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Regression1 (2 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-EmployeeRestAPISuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for EmployeeRestAPISuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-EmployeeRestAPISuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for EmployeeRestAPISuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_EmployeeRestAPISuite');
+function tableData_EmployeeRestAPISuite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(10);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'testResponseBody')
+data.setCell(0, 2, 'com.employeeapi.testcases.TC01_GET_AllEmployees')
+data.setCell(0, 3, 60);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'testContentEncoding')
+data.setCell(1, 2, 'com.employeeapi.testcases.TC01_GET_AllEmployees')
+data.setCell(1, 3, 12);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'testContentLength')
+data.setCell(2, 2, 'com.employeeapi.testcases.TC01_GET_AllEmployees')
+data.setCell(2, 3, 10);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'testCoockies')
+data.setCell(3, 2, 'com.employeeapi.testcases.TC01_GET_AllEmployees')
+data.setCell(3, 3, 8);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'testServerType')
+data.setCell(4, 2, 'com.employeeapi.testcases.TC01_GET_AllEmployees')
+data.setCell(4, 3, 7);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'testStatusCode')
+data.setCell(5, 2, 'com.employeeapi.testcases.TC01_GET_AllEmployees')
+data.setCell(5, 3, 3);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'testResponseBody')
+data.setCell(6, 2, 'com.employeeapi.testcases.TC02_GET_SingleEmployeeRecord')
+data.setCell(6, 3, 3);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'testContentType')
+data.setCell(7, 2, 'com.employeeapi.testcases.TC01_GET_AllEmployees')
+data.setCell(7, 3, 3);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'testResponseTime')
+data.setCell(8, 2, 'com.employeeapi.testcases.TC01_GET_AllEmployees')
+data.setCell(8, 3, 2);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'testStatusLine')
+data.setCell(9, 2, 'com.employeeapi.testcases.TC01_GET_AllEmployees')
+data.setCell(9, 3, 1);
+window.suiteTableData['EmployeeRestAPISuite']= { tableData: data, tableDiv: 'times-div-EmployeeRestAPISuite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 109 ms</span>
+              <div id="times-div-EmployeeRestAPISuite">
+              </div> <!-- times-div-EmployeeRestAPISuite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-EmployeeRestAPISuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for EmployeeRestAPISuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-EmployeeRestAPISuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-EmployeeRestAPISuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.employeeapi.testcases.TC01_GET_AllEmployees</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">getAllEmployes</span>
+                <span class="method-start">105 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">testContentEncoding</span>
+                <span class="method-start">6441 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testContentLength</span>
+                <span class="method-start">6457 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testContentType</span>
+                <span class="method-start">6509 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testCoockies</span>
+                <span class="method-start">6517 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testResponseBody</span>
+                <span class="method-start">6525 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testResponseTime</span>
+                <span class="method-start">6587 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testServerType</span>
+                <span class="method-start">6600 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testStatusCode</span>
+                <span class="method-start">6609 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testStatusLine</span>
+                <span class="method-start">6615 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">6617 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.employeeapi.testcases.TC02_GET_SingleEmployeeRecord</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup</span>
+                <span class="method-start">6630 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">getEmployeeData</span>
+                <span class="method-start">6650 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">testResponseBody</span>
+                <span class="method-start">10883 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

@@ -1,0 +1,20 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 10, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 13.44 s <<< FAILURE! - in TestSuite
+com.employeeapi.testcases.TC01_GET_AllEmployees.testContentLength  Time elapsed: 0.041 s  <<< FAILURE!
+java.lang.AssertionError: expected [Content Length is not as expected - < 100] but found [false]
+	at com.employeeapi.testcases.TC01_GET_AllEmployees.testContentLength(TC01_GET_AllEmployees.java:103)
+
+com.employeeapi.testcases.TC01_GET_AllEmployees.testContentType  Time elapsed: 0.009 s  <<< FAILURE!
+java.lang.AssertionError: Content Type is not as expected - text/html; charset=UTF-8 expected [text/html; charset=UTF-8] but found [application/json;charset=utf-8]
+	at com.employeeapi.testcases.TC01_GET_AllEmployees.testContentType(TC01_GET_AllEmployees.java:74)
+
+com.employeeapi.testcases.TC01_GET_AllEmployees.testResponseTime  Time elapsed: 0.009 s  <<< FAILURE!
+java.lang.AssertionError: expected [Response Time is not as expected >2000] but found [true]
+	at com.employeeapi.testcases.TC01_GET_AllEmployees.testResponseTime(TC01_GET_AllEmployees.java:57)
+
+com.employeeapi.testcases.TC01_GET_AllEmployees.testServerType  Time elapsed: 0.006 s  <<< FAILURE!
+java.lang.AssertionError: Server Type is not as expected - nginx/1.14.1 expected [nginx/1.14.1] but found [nginx/1.16.0]
+	at com.employeeapi.testcases.TC01_GET_AllEmployees.testServerType(TC01_GET_AllEmployees.java:82)
+

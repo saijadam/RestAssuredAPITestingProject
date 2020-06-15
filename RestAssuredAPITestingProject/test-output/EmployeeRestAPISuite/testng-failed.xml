@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [EmployeeRestAPISuite]">
+  <test name="Regression1(failed)">
+    <classes>
+      <class name="com.employeeapi.testcases.TC02_GET_SingleEmployeeRecord">
+        <methods>
+          <include name="setup"/>
+          <include name="getEmployeeData"/>
+        </methods>
+      </class> <!-- com.employeeapi.testcases.TC02_GET_SingleEmployeeRecord -->
+      <class name="com.employeeapi.testcases.TC01_GET_AllEmployees">
+        <methods>
+          <include name="testContentLength"/>
+          <include name="setup"/>
+          <include name="testServerType"/>
+          <include name="testContentType"/>
+          <include name="getAllEmployes"/>
+          <include name="testResponseTime"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.employeeapi.testcases.TC01_GET_AllEmployees -->
+    </classes>
+  </test> <!-- Regression1(failed) -->
+</suite> <!-- Failed suite [EmployeeRestAPISuite] -->

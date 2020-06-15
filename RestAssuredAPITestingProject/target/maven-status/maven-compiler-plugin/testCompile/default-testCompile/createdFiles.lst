@@ -1,0 +1,11 @@
+test\ap\com\TC3_GET_SpecificHeaderDetails.class
+test\ap\com\TC7_GET_Authorization.class
+test\ap\com\TC5_GET_ResponseBody.class
+test\ap\com\TC8_DataDriven.class
+test\ap\com\TC4_GET_AllHeaders.class
+test\ap\com\TC2_POST_UserRegistration.class
+com\employeeapi\testcases\TC01_GET_AllEmployees.class
+com\employeeapi\testcases\TC02_GET_SingleEmployeeRecord.class
+test\ap\com\TC6_GET_AllResponseBody.class
+com\employeeapi\base\TestBase.class
+test\ap\com\TC1_GET_WeatherDetails.class

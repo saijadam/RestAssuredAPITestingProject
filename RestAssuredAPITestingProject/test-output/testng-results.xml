@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="4" ignored="0" total="10" passed="6">
+  <reporter-output>
+  </reporter-output>
+  <suite name="EmployeeRestAPISuite" duration-ms="11728" started-at="2020-06-15T15:23:01Z" finished-at="2020-06-15T15:23:12Z">
+    <groups>
+    </groups>
+    <test name="Regression1" duration-ms="11728" started-at="2020-06-15T15:23:01Z" finished-at="2020-06-15T15:23:12Z">
+      <class name="com.employeeapi.testcases.TC01_GET_AllEmployees">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.employeeapi.testcases.TC01_GET_AllEmployees@257ef9ed]" name="setup" is-config="true" duration-ms="800" started-at="2020-06-15T20:53:01Z" finished-at="2020-06-15T20:53:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="getAllEmployes()[pri:0, instance:com.employeeapi.testcases.TC01_GET_AllEmployees@257ef9ed]" name="getAllEmployes" is-config="true" duration-ms="6754" started-at="2020-06-15T20:53:02Z" finished-at="2020-06-15T20:53:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getAllEmployes -->
+        <test-method status="PASS" signature="testContentEncoding()[pri:0, instance:com.employeeapi.testcases.TC01_GET_AllEmployees@257ef9ed]" name="testContentEncoding" duration-ms="9" started-at="2020-06-15T20:53:08Z" finished-at="2020-06-15T20:53:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testContentEncoding -->
+        <test-method status="FAIL" signature="testContentLength()[pri:0, instance:com.employeeapi.testcases.TC01_GET_AllEmployees@257ef9ed]" name="testContentLength" duration-ms="4" started-at="2020-06-15T20:53:08Z" finished-at="2020-06-15T20:53:08Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Content Length is not as expected - < 100] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Content Length is not as expected - < 100] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:179)
+	at com.employeeapi.testcases.TC01_GET_AllEmployees.testContentLength(TC01_GET_AllEmployees.java:103)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testContentLength -->
+        <test-method status="FAIL" signature="testContentType()[pri:0, instance:com.employeeapi.testcases.TC01_GET_AllEmployees@257ef9ed]" name="testContentType" duration-ms="2" started-at="2020-06-15T20:53:08Z" finished-at="2020-06-15T20:53:08Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Content Type is not as expected - text/html; charset=UTF-8 expected [text/html; charset=UTF-8] but found [application/json;charset=utf-8]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Content Type is not as expected - text/html; charset=UTF-8 expected [text/html; charset=UTF-8] but found [application/json;charset=utf-8]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at com.employeeapi.testcases.TC01_GET_AllEmployees.testContentType(TC01_GET_AllEmployees.java:74)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testContentType -->
+        <test-method status="PASS" signature="testCoockies()[pri:0, instance:com.employeeapi.testcases.TC01_GET_AllEmployees@257ef9ed]" name="testCoockies" duration-ms="7" started-at="2020-06-15T20:53:08Z" finished-at="2020-06-15T20:53:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCoockies -->
+        <test-method status="PASS" signature="testResponseBody()[pri:0, instance:com.employeeapi.testcases.TC01_GET_AllEmployees@257ef9ed]" name="testResponseBody" duration-ms="44" started-at="2020-06-15T20:53:08Z" finished-at="2020-06-15T20:53:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testResponseBody -->
+        <test-method status="FAIL" signature="testResponseTime()[pri:0, instance:com.employeeapi.testcases.TC01_GET_AllEmployees@257ef9ed]" name="testResponseTime" duration-ms="3" started-at="2020-06-15T20:53:08Z" finished-at="2020-06-15T20:53:08Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Response Time is not as expected >2000] but found [true]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Response Time is not as expected >2000] but found [true]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:179)
+	at com.employeeapi.testcases.TC01_GET_AllEmployees.testResponseTime(TC01_GET_AllEmployees.java:57)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testResponseTime -->
+        <test-method status="FAIL" signature="testServerType()[pri:0, instance:com.employeeapi.testcases.TC01_GET_AllEmployees@257ef9ed]" name="testServerType" duration-ms="5" started-at="2020-06-15T20:53:08Z" finished-at="2020-06-15T20:53:08Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Server Type is not as expected - nginx/1.14.1 expected [nginx/1.14.1] but found [nginx/1.16.0]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Server Type is not as expected - nginx/1.14.1 expected [nginx/1.14.1] but found [nginx/1.16.0]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at com.employeeapi.testcases.TC01_GET_AllEmployees.testServerType(TC01_GET_AllEmployees.java:82)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testServerType -->
+        <test-method status="PASS" signature="testStatusCode()[pri:0, instance:com.employeeapi.testcases.TC01_GET_AllEmployees@257ef9ed]" name="testStatusCode" duration-ms="3" started-at="2020-06-15T20:53:08Z" finished-at="2020-06-15T20:53:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testStatusCode -->
+        <test-method status="PASS" signature="testStatusLine()[pri:0, instance:com.employeeapi.testcases.TC01_GET_AllEmployees@257ef9ed]" name="testStatusLine" duration-ms="2" started-at="2020-06-15T20:53:08Z" finished-at="2020-06-15T20:53:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testStatusLine -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.employeeapi.testcases.TC01_GET_AllEmployees@257ef9ed]" name="tearDown" is-config="true" duration-ms="0" started-at="2020-06-15T20:53:08Z" finished-at="2020-06-15T20:53:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.employeeapi.testcases.TC01_GET_AllEmployees -->
+      <class name="com.employeeapi.testcases.TC02_GET_SingleEmployeeRecord">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.employeeapi.testcases.TC02_GET_SingleEmployeeRecord@59c70ceb]" name="setup" is-config="true" duration-ms="9" started-at="2020-06-15T20:53:08Z" finished-at="2020-06-15T20:53:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="getEmployeeData()[pri:0, instance:com.employeeapi.testcases.TC02_GET_SingleEmployeeRecord@59c70ceb]" name="getEmployeeData" is-config="true" duration-ms="3983" started-at="2020-06-15T20:53:08Z" finished-at="2020-06-15T20:53:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getEmployeeData -->
+        <test-method status="PASS" signature="testResponseBody()[pri:0, instance:com.employeeapi.testcases.TC02_GET_SingleEmployeeRecord@59c70ceb]" name="testResponseBody" duration-ms="2" started-at="2020-06-15T20:53:12Z" finished-at="2020-06-15T20:53:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testResponseBody -->
+      </class> <!-- com.employeeapi.testcases.TC02_GET_SingleEmployeeRecord -->
+    </test> <!-- Regression1 -->
+  </suite> <!-- EmployeeRestAPISuite -->
+</testng-results>

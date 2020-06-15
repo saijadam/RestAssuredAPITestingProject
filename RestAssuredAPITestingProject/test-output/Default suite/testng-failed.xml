@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
+    <classes>
+      <class name="com.employeeapi.testcases.TC01_GET_AllEmployees">
+        <methods>
+          <include name="testContentLength"/>
+          <include name="setup"/>
+          <include name="testServerType"/>
+          <include name="testContentType"/>
+          <include name="getAllEmployes"/>
+          <include name="testResponseTime"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.employeeapi.testcases.TC01_GET_AllEmployees -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
